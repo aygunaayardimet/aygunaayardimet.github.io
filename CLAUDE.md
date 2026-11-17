@@ -1,7 +1,7 @@
 # aygunaayardimet.github.io
 
 Static site: `index.html` + `style.css` + `script.js`, no build step. Assets are
-cache-busted with query strings (`style.css?v=30`, `script.js?v=21`) — bump them
+cache-busted with query strings (`style.css?v=38`, `script.js?v=21`) — bump them
 when those files change. UI text lives in the `translations` object in
 `script.js` (az / tr / ru / en) and is applied via `data-i18n` attributes.
 
