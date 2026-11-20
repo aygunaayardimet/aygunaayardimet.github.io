@@ -1,0 +1,103 @@
+/* =====================================================================
+   SIMPLE MODE (A/B test) — plain, homemade look.
+   Loaded AFTER style.css. To go back to the professional look, delete the
+   <link ... simple.css> line in index.html (or checkout tag professional-v1).
+   ===================================================================== */
+
+html, body { scroll-behavior: auto; }
+body {
+  background: #fff !important;
+  color: #222 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px;
+  line-height: 1.6;
+}
+h1, h2, h3, .hero-headline, .section-title, .info-title, .bank-name {
+  font-family: Arial, Helvetica, sans-serif !important;
+  letter-spacing: 0 !important;
+  color: #222 !important;
+}
+
+/* no animation, no effects */
+*, *::before, *::after {
+  animation: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+.reveal { opacity: 1 !important; transform: none !important; }
+
+/* header: plain bar */
+.site-header, .site-header.is-scrolled {
+  position: static !important;
+  background: #fff !important;
+  border-bottom: 1px solid #ddd !important;
+}
+.main-nav { display: none !important; }
+.header-cta { display: none !important; }
+.brand-heart { display: none !important; }
+.site-brand, .site-brand span { color: #222 !important; font-weight: 700; }
+
+/* hero: plain text, no dark gradient / aurora / orb / counter */
+.hero, .hero-v2 {
+  background: #fff !important;
+  min-height: 0 !important;
+  padding: 2rem 1rem 1rem !important;
+}
+.hero-aurora, .hero-orb, .hero-days, .scroll-indicator { display: none !important; }
+.hero-headline { color: #222 !important; font-size: 1.9rem !important; }
+.hero-text { color: #333 !important; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+.hero-actions .btn-ghost { display: none !important; }
+.btn, .btn-primary {
+  background: #2e7d32 !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  background-image: none !important;
+}
+.btn svg { display: none !important; }
+
+/* sections: flat, no cards, no tinted backgrounds */
+.section, .story-section, .gallery-section, .medical-section,
+.docs-section, .donation-section {
+  background: #fff !important;
+  background-image: none !important;
+  padding: 1.5rem 1rem !important;
+  border: 0 !important;
+}
+.eyebrow { display: none !important; }
+.section-title { color: #222 !important; font-size: 1.5rem !important; }
+.section-caption, .story-text, .info-text, .contact-list, .contact-list dd,
+.contact-list dt, .doc-note { color: #333 !important; }
+.info-card, .bank-card {
+  background: #fff !important;
+  background-image: none !important;
+  border: 1px solid #ccc !important;
+  border-radius: 6px !important;
+  color: #222 !important;
+}
+.info-icon, .bank-chip { display: none !important; }
+.story-photo img, .thumb img, .doc-thumb img { border-radius: 4px !important; }
+
+/* bank cards: plain readable number */
+.bank-name, .bank-number, .bank-holder, .holder-rel { color: #222 !important; }
+.bank-number { font-size: 1.25rem !important; letter-spacing: .05em; font-weight: 700; }
+.copy-btn {
+  background: #2e7d32 !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+}
+.step-pills { color: #333 !important; }
+.step-pill { background: #f2f2f2 !important; color: #222 !important; border: 0 !important; }
+.step-pill-num { background: #2e7d32 !important; color: #fff !important; }
+
+/* footer: plain */
+.site-footer { background: #f5f5f5 !important; color: #333 !important; }
+.site-footer * { color: #333 !important; }
+
+/* floating buttons stay (practical), but plain */
+.floating-cards-btn { background: #2e7d32 !important; color: #fff !important; background-image: none !important; }
